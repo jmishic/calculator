@@ -10,7 +10,8 @@ def main():
             quitter = i
         else:
             i_list = i.split(" ")
-            c.calculator(i_list)
+            answer = c.calculator(i_list)
+            print(i + " " + str(answer))
 
 
 if __name__ == '__main__':
