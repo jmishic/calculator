@@ -2,6 +2,11 @@ import operator
 
 
 def calculator(equation: list) -> float:
+    """
+    performs operations from left to right
+    :param equation: list of each item in the equation
+    :return: final number that is calculated
+    """
     ops = {"+": operator.add, "-": operator, "/": operator.truediv, "*": operator.mul, "**": operator.pow,
            "//": operator.floordiv, "%": operator.mod}
     counter = 1
